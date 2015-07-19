@@ -1,5 +1,6 @@
 var express = require('express'),
     swig = require('swig'),
+    riot = require('riot'),
     app = express()
 
 app.engine('html',swig.renderFile)
