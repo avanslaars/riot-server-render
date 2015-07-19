@@ -12,6 +12,7 @@ app.set('views',__dirname + '/views')
 app.use(express.static(__dirname + '/public'))
 
 app.get('/',function(req,res){
+  var startingName = 'Susan'
   var tagOutput = riot.render(hello,{firstName:'John'})
   res.render('index',{tagContent:tagOutput})
 })
