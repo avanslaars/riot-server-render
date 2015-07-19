@@ -9,6 +9,8 @@ app.engine('html',swig.renderFile)
 app.set('view engine', 'html')
 app.set('views',__dirname + '/views')
 
+app.use(express.static(__dirname + '/public'))
+
 app.get('/',function(req,res){
   var tagOutput = riot.render(hello,{firstName:'John'})
   res.render('index',{tagContent:tagOutput})
