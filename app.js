@@ -1,6 +1,7 @@
 var express = require('express'),
     swig = require('swig'),
     riot = require('riot'),
+    hello = require('./hello-world.tag'),
     app = express()
 
 app.engine('html',swig.renderFile)
