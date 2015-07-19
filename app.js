@@ -11,7 +11,7 @@ app.set('views',__dirname + '/views')
 
 app.get('/',function(req,res){
   var tagOutput = riot.render(hello)
-  res.render('index',{tagContent:sampleHtml})
+  res.render('index',{tagContent:tagOutput})
 })
 
 app.listen(3000, function(){
