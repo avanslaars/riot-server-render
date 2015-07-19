@@ -1,3 +1,4 @@
 <hello-world>
-  <h2>Hello from the hello-world tag!</h2>
+  <h2>Hello, {opts.firstName}!</h2>
+
 </hello-world>
