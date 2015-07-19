@@ -2,6 +2,8 @@ var express = require('express'),
     swig = require('swig'),
     app = express()
 
+app.engine('html',swig.renderFile)
+
 app.get('/',function(req,res){
   res.send('Hello World')
 })
