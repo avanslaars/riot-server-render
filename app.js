@@ -13,7 +13,7 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/',function(req,res){
   var startingName = 'Susan'
-  var tagOutput = riot.render(hello,{firstName:'John'})
+  var tagOutput = riot.render(hello,{firstName:startingName})
   res.render('index',{tagContent:tagOutput,firstName:startingName})
 })
 
