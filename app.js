@@ -10,7 +10,7 @@ app.set('view engine', 'html')
 app.set('views',__dirname + '/views')
 
 app.get('/',function(req,res){
-  var tagOutput = riot.render(hello)
+  var tagOutput = riot.render(hello,{firstName:'John'})
   res.render('index',{tagContent:tagOutput})
 })
 
