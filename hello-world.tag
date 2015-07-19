@@ -5,6 +5,8 @@
   <button onclick={updateName}>Update Name</button>
 
   <script>
+    updateName(){
 
+    }
   </script>
 </hello-world>
