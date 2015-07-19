@@ -4,4 +4,7 @@
   <input type="text" name="fName">
   <button onclick={updateName}>Update Name</button>
 
+  <script>
+
+  </script>
 </hello-world>
