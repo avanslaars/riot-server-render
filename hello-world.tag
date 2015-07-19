@@ -6,7 +6,7 @@
 
   <script>
     updateName(){
-
+      opts.firstName = this.fName.value
     }
   </script>
 </hello-world>
