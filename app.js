@@ -9,7 +9,7 @@ app.set('views',__dirname + '/views')
 
 app.get('/',function(req,res){
   var sampleHtml = '<h2>This is a test</h2>'
-  res.render('index')
+  res.render('index',{tagContent:sampleHtml})
 })
 
 app.listen(3000, function(){
